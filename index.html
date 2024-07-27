@@ -1,174 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Techno Trends</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="C:\Users\HP\Downloads\Black and White Abstract Agency Logo.png"
-    />
-    <style>
-      /* Base styles for team section */
-      #team {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px; /* Add some padding around the team section */
-        box-sizing: border-box; /* Ensure padding is included in width calculation */
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techno Trends</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="assets/images/Black_and_White_Abstract_Agency_Logo.png"
+  />
+  <style>
+    /* Base styles for team section */
+    #team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
 
+    .team-member {
+      text-align: center;
+      margin: 20px;
+      max-width: 300px;
+      flex: 1 1 300px;
+      box-sizing: border-box;
+    }
+
+    .team-member img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    .team-member h3 {
+      margin-top: 10px;
+    }
+
+    .team-member p {
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
       .team-member {
-        text-align: center;
-        margin: 20px;
-        max-width: 300px; /* Adjust maximum width of each team member */
-        flex: 1 1 300px; /* Ensure each member takes full width on small screens, up to 300px wide */
-        box-sizing: border-box; /* Ensure margin is included in width calculation */
+        flex-basis: 100%;
+        max-width: 100%;
       }
-
-      .team-member img {
-        width: 200px; /* Adjust width of the circular image */
-        height: 200px; /* Adjust height of the circular image */
-        object-fit: cover; /* Ensure the image covers the entire circle */
-        border-radius: 50%; /* Create a circular shape */
-        border: 2px solid #fff; /* Optional: Add a border for better visibility */
-      }
-
-      .team-member h3 {
-        margin-top: 10px;
-      }
-
-      .team-member p {
-        font-style: italic;
-      }
-
-      /* Media query for responsive design */
-      @media (max-width: 768px) {
-        .team-member {
-          flex-basis: 100%; /* Each team member takes full width on smaller screens */
-          max-width: 100%; /* Max width is now 100% of the container */
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="logo">
-          <h1>Techno Trends</h1>
-        </div>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#team">Our Team</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="joinus.html">Join us</a></li>
-          </ul>
-        </nav>
-        <a href="#contact" class="cta">Get Started</a>
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Techno Trends</h1>
       </div>
-    </header>
-
-    <section class="hero">
-      <div class="container">
-        <h1>Transform Your Videos, Transform Your Brand</h1>
-        <p>
-          Professional video editing services that captivate, engage, and
-          convert.
-        </p>
-        <a href="#contact" class="cta">Get Your Free Quote Today</a>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>
-          Techno Trinds is a leading social media agency specializing in video
-          editing. Our mission is to help brands grow their online presence
-          through compelling video content.
-        </p>
-      </div>
-    </section>
-
-    <!-- Team Members Section -->
-    <section id="team" class="team">
-      <div class="container">
-        <h2>Our Team</h2>
-
-        <!-- Team Member 1 -->
-        <div class="team-member">
-          <img src="ramyawad.Jpg" alt="Team Member Name 1" />
-          <h3>Ramy awad</h3>
-          <p>The founder</p>
-        </div>
-
-        <!-- Team Member 2 -->
-        <div class="team-member">
-          <img src="ramizramy.Jpg" alt="Team Member Name 2" />
-          <h3>Ramiz Ramy</h3>
-          <p>Head of devolopment</p>
-        </div>
-
-        <div class="team-member">
-          <img src="ahmedsaied.Jpg" alt="Team Member Name 3" />
-          <h3>Ahmed sayed</h3>
-          <p>Head of marketing</p>
-        </div>
-
-        <!-- Add more team members as needed -->
-      </div>
-    </section>
-    <!-- End of Team Members Section -->
-
-    <section id="services" class="services">
-      <div class="container">
-        <h2>Our Services</h2>
-        <div class="service">
-          <h3>Video Editing</h3>
-          <p>Crafting compelling narratives through expert editing.</p>
-        </div>
-        <div class="service">
-          <h3>Motion Graphics</h3>
-          <p>Adding dynamic visuals to make your videos pop.</p>
-        </div>
-        <div class="service">
-          <h3>Color Grading</h3>
-          <p>
-            Enhancing the visual appeal of your footage with professional color
-            correction.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p></p>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSd2bD8hAy7qOPS7hLeSvbOnbitoOY4LDwyMr1PHBnXJe3EKGg/viewform?embedded=true"
-          width="640"
-          height="686"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >Loading…</iframe
-        >
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2024 VideoBoost. All rights reserved.</p>
-        <ul class="social-links">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">LinkedIn</a></li>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="joinus.html">Join us</a></li>
         </ul>
+      </nav>
+      <a href="#contact" class="cta">Get Started</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Transform Your Videos, Transform Your Brand</h1>
+      <p>
+        Professional video editing services that captivate, engage, and
+        convert.
+      </p>
+      <a href="#contact" class="cta">Get Your Free Quote Today</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Techno Trends is a leading social media agency specializing in video
+        editing. Our mission is to help brands grow their online presence
+        through compelling video content.
+      </p>
+    </div>
+  </section>
+
+  <!-- Team Members Section -->
+  <section id="team" class="team">
+    <div class="container">
+      <h2>Our Team</h2>
+
+      <!-- Team Member 1 -->
+      <div class="team-member">
+        <img src="assets/images/ramyawad.Jpg" alt="Ramy Awad" />
+        <h3>Ramy Awad</h3>
+        <p>The Founder</p>
       </div>
-    </footer>
-  </body>
+
+      <!-- Team Member 2 -->
+      <div class="team-member">
+        <img src="assets/images/ramizramy.Jpg" alt="Ramiz Ramy" />
+        <h3>Ramiz Ramy</h3>
+        <p>Head of Development</p>
+      </div>
+
+      <div class="team-member">
+        <img src="assets/images/ahmedsaied.Jpg" alt="Ahmed Sayed" />
+        <h3>Ahmed Sayed</h3>
+        <p>Head of Marketing</p>
+      </div>
+
+      <!-- Add more team members as needed -->
+    </div>
+  </section>
+  <!-- End of Team Members Section -->
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service">
+        <h3>Video Editing</h3>
+        <p>Crafting compelling narratives through expert editing.</p>
+      </div>
+      <div class="service">
+        <h3>Motion Graphics</h3>
+        <p>Adding dynamic visuals to make your videos pop.</p>
+      </div>
+      <div class="service">
+        <h3>Color Grading</h3>
+        <p>
+          Enhancing the visual appeal of your footage with professional color
+          correction.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSd2bD8hAy7qOPS7hLeSvbOnbitoOY4LDwyMr1PHBnXJe3EKGg/viewform?embedded=true"
+        width="640"
+        height="686"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+      >Loading…</iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Techno Trends. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
 </html>
